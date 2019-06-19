@@ -101,9 +101,11 @@ li {
 }
 .history {
   background: var(--ola-green-color);
-  height: 40vh;
+  width: 100vw;
+  height: auto;
 }
 .history .illustration {
-  width: 500px;
+  width: 50vw;
+  height: auto;
   margin: 3rem 3rem 3rem 1rem;
 }
