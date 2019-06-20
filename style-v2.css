@@ -1,0 +1,157 @@
+/* font-family: 'Luckiest Guy', cursive; */
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --ola-white-color: #ffffff;
+  --ola-red-color: #f30501;
+  --ola-green-color: #46a916;
+  --ola-yellow-color: #ffdd00;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--ola-white-color);
+}
+
+.navigation {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation-item-logo img {
+  margin-left: 0;
+  height: 80px;
+}
+
+.navigation-item-search {
+  margin-right: 0;
+}
+
+.navigation-item-bar {
+  margin: auto;
+  display: flex;
+}
+
+.navigation-item-bar a {
+  text-decoration: none;
+}
+
+.navigation-item-bar li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0 1rem;
+}
+
+.navigation-item-bar li a {
+  color: var(--ola-red-color);
+}
+
+.navigation-item-bar li a:hover {
+  color: var(--ola-white-color);
+  background: var(--ola-red-color);
+}
+.navigation-item-logo {
+  /* transform: scale(0.6); */
+}
+
+/* .nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+li {
+  flex: 1 1 auto;
+  margin: 0 1rem;
+  padding: 0rem;
+}
+.logo-ola {
+  transform: scale(0.6);
+  margin: -25px;
+}
+
+.navbar .nav-menu li a {
+  font-family: helvetica, sans-serif;
+  padding: 0rem;
+  color: var(--ola-red-color);
+  text-decoration: none;
+
+}
+.navbar .nav-menu a:hover {
+  color: var(--ola-white-color);
+
+}
+.navbar .search {
+  transform: scale(2);
+  margin: 25px;
+  color: var(--ola-red-color);
+  text-decoration: none;
+} */
+.showcase {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--ola-white-color);
+  width: 100vw;
+  height: 35vh;
+  font-family: "Luckiest Guy", cursive;
+  background: url("//asset-eu.unileversolutions.com/content/dam/unilever/heart/netherlands/general_image/walls_nl_header-1382974-jpg.jpg.ulenscale.1440x360.jpg")
+    no-repeat center center/cover;
+}
+.showcase h1 {
+  margin: 2rem;
+  font-size: 4rem;
+}
+.first-item-row {
+  display: flex;
+  flex-direction: row;
+}
+.items .first-item-row img {
+  flex: 1 1 auto;
+  width: 20%;
+  height: 20%;
+}
+.items .second-item-row img {
+  flex: 1 1 auto;
+  width: 25%;
+  height: 25%;
+}
+.items {
+  background: var(--ola-red-color);
+}
+.history {
+  background: var(--ola-green-color);
+  width: 100vw;
+  height: auto;
+}
+.history .illustration {
+  width: 40vw;
+  height: auto;
+  margin: 3rem 3rem 3rem 1rem;
+}
