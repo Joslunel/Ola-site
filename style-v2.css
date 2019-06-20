@@ -25,6 +25,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 
 .navbar {
   position: sticky;
@@ -123,36 +126,70 @@ ul {
 .history-wrap {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .history-wrap img {
   margin: 3rem 2rem;
   width: 50%;
   height: 50%;
 }
-/* .first-item-row {
+.history-link-title {
+  display: block;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 1.2rem;
+  color: var(--ola-white-color);
+  text-decoration: none;
+  margin-right: 3rem;
+}
+.history-link-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: var(--ola-white-color);
+  text-decoration: none;
+}
+.discover-section {
+  width: 100%;
+  background: var(--ola-yellow-color);
+}
+.discover-wrap {
   display: flex;
-  flex-direction: row;
+  flex-flow: column nowrap;
+  align-items: center;
 }
-.items .first-item-row img {
-  flex: 1 1 auto;
-  width: 20%;
-  height: 20%;
+.discover-wrap h2 {
+  color: var(--ola-red-color);
+  font-family: "Luckiest Guy", cursive;
+  margin: 2rem 0;
 }
-.items .second-item-row img {
-  flex: 1 1 auto;
-  width: 25%;
-  height: 25%;
+.discover-wrap .discover-stories {
+  display: flex;
+  justify-content: center;
 }
-.items {
-  background: var(--ola-red-color); */
-/* } */
-/* .history {
-  background: var(--ola-green-color);
-  width: 100vw;
-  height: auto;
+
+.discover-story-left h2 {
+  color: var(--ola-white-color);
+  background: url("//asset-eu.unileversolutions.com/content/dam/unilever/heart/global/general_image/spoon_640x640-1390623-jpg.jpg.ulenscale.320x200.jpg")
+    no-repeat center;
+  padding: 5.5rem 5.8rem;
+  margin: 0;
 }
-.history .illustration {
-  width: 40vw;
-  height: auto;
-  margin: 3rem 3rem 3rem 1rem;
-} */
+.discover-story-right h2 {
+  color: var(--ola-white-color);
+  background: url("//asset-eu.unileversolutions.com/content/dam/unilever/heart/global/general_image/ice_cream/out_of_home_ice_cream/walls_c52_relatedarticles_girls-1052897-jpg.jpg.ulenscale.320x200.jpg")
+    no-repeat center;
+  padding: 5.5rem 1.2rem;
+  margin: 0;
+}
+.discover-story-btn {
+  color: var(--ola-red-color);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border: 1px solid var(--ola-red-color);
+  border-radius: 40px;
+}
+.discover-story-btn:hover {
+  background: #f1e46b;
+}
