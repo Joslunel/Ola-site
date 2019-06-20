@@ -55,7 +55,6 @@ ul {
 .navigation-item-search a {
   text-decoration: none;
   padding: 1.6rem;
-  /* margin-top: 2rem; */
   color: var(--ola-red-color);
 }
 
@@ -89,39 +88,6 @@ ul {
   background: var(--ola-red-color);
 }
 
-/* .nav-menu {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-}
-li {
-  flex: 1 1 auto;
-  margin: 0 1rem;
-  padding: 0rem;
-}
-.logo-ola {
-  transform: scale(0.6);
-  margin: -25px;
-}
-
-.navbar .nav-menu li a {
-  font-family: helvetica, sans-serif;
-  padding: 0rem;
-  color: var(--ola-red-color);
-  text-decoration: none;
-
-}
-.navbar .nav-menu a:hover {
-  color: var(--ola-white-color);
-
-}
-.navbar .search {
-  transform: scale(2);
-  margin: 25px;
-  color: var(--ola-red-color);
-  text-decoration: none;
-} */
 .showcase {
   display: flex;
   justify-content: flex-start;
@@ -137,7 +103,19 @@ li {
   margin: 2rem;
   font-size: 4rem;
 }
-.first-item-row {
+.products {
+  width: 100%;
+  background: var(--ola-red-color);
+}
+.product-wrap {
+display: flex;
+flex-flow: row wrap;
+}
+.product-wrap .product {
+  width: 25%;
+  height: 25%;
+}
+/* .first-item-row {
   display: flex;
   flex-direction: row;
 }
@@ -152,7 +130,7 @@ li {
   height: 25%;
 }
 .items {
-  background: var(--ola-red-color);
+  background: var(--ola-red-color); */
 }
 .history {
   background: var(--ola-green-color);
