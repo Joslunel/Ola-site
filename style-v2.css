@@ -24,6 +24,7 @@ h3 {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 a {
   text-decoration: none;
@@ -192,4 +193,25 @@ a {
 }
 .discover-story-btn:hover {
   background: #f1e46b;
+}
+.footer-section {
+  width: 100%;
+  background: var(--ola-red-color);
+}
+.footer-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer-link-bar {
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  margin: 3rem;
+}
+.footer-link-bar a {
+  color: var(--ola-white-color);
+  font-family: "Roboto", sans-serif;
+}
+.footer-link-bar a:hover {
+  text-decoration-line: underline;
 }
