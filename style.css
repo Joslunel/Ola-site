@@ -16,16 +16,7 @@ body {
   margin: 0px;
   padding: 0px;
 }
-/* h3 {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-} */
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+
 a {
   text-decoration: none;
 }
@@ -37,23 +28,22 @@ a {
   background-color: var(--ola-white-color);
 }
 
-.navigation {
+.navigation-wrap {
+  display: flex;
+  justify-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.navigation-wrap {
-  display: flex;
-  justify-content: space-around;
-}
-
 .navigation-item-logo img {
+  flex: 0 1 auto;
   margin-left: 0;
   height: 70px;
 }
 
 .navigation-item-search {
   margin-right: 0;
+  flex: 0 1 auto;
 }
 
 .navigation-item-search a {
@@ -68,8 +58,11 @@ a {
 }
 
 .navigation-item-bar {
-  margin: auto;
   display: flex;
+  flex: 0 1 auto;
+  margin: 2rem 0 0 0;
+  padding: 0;
+  list-style: none;
 }
 
 .navigation-item-bar a {
@@ -107,34 +100,39 @@ a {
   margin: 2rem;
   font-size: 4rem;
 }
-.products {
-  width: 100%;
-  background: var(--ola-red-color);
-}
+
 .product-wrap {
   display: flex;
   flex-flow: row wrap;
+  background: var(--ola-red-color);
 }
-.product-wrap .product {
-  width: 25%;
-  height: 25%;
+.product {
+  flex: 0 1 25%;
+}
+
+.product img {
+  width: 100%;
+  display: block;
 }
 
 .history-section {
-  width: 100%;
   background: var(--ola-green-color);
-}
-.history-wrap {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.history-wrap img {
+
+.history-image {
+  flex: 0 1 50%;
   margin: 3rem 2rem;
-  width: 50%;
-  height: 50%;
 }
+.history-image img {
+  width: 100%;
+  display: block;
+}
+
 .history-link-title {
+  flex: 0 1 auto;
   display: block;
   font-family: "Luckiest Guy", cursive;
   font-size: 1.2rem;
@@ -149,37 +147,49 @@ a {
   text-decoration: none;
 }
 .discover-section {
-  width: 100%;
   background: var(--ola-yellow-color);
-}
-.discover-wrap {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-.discover-wrap h2 {
+
+.discover-section h2 {
   color: var(--ola-red-color);
   font-family: "Luckiest Guy", cursive;
   margin: 2rem 0;
 }
-.discover-wrap .discover-stories {
+.discover-stories {
   display: flex;
   justify-content: center;
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 .discover-story-left h2 {
   color: var(--ola-white-color);
-  background: url("//asset-eu.unileversolutions.com/content/dam/unilever/heart/global/general_image/spoon_640x640-1390623-jpg.jpg.ulenscale.320x200.jpg")
-    no-repeat center;
-  padding: 5.5rem 5.8rem;
-  margin: 0;
+  text-decoration: none;
+  font-family: "Luckiest Guy", cursive;
+  position: absolute;
+  bottom: 1rem;
+  left: 5rem;
 }
-.discover-story-right h2 {
+.discover-stories h2 {
   color: var(--ola-white-color);
-  background: url("//asset-eu.unileversolutions.com/content/dam/unilever/heart/global/general_image/ice_cream/out_of_home_ice_cream/walls_c52_relatedarticles_girls-1052897-jpg.jpg.ulenscale.320x200.jpg")
-    no-repeat center;
-  padding: 5.5rem 1.2rem;
-  margin: 0;
+  text-decoration: none;
+  font-family: "Luckiest Guy", cursive;
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+}
+.discover-story-left img {
+  width: 100%;
+  display: block;
+  flex: 0 1 auto;
+}
+.discover-story-right img {
+  width: 100%;
+  display: block;
+  flex: 0 1 auto;
 }
 .discover-story-btn {
   color: var(--ola-red-color);
@@ -187,7 +197,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   padding: 1rem 2rem;
-  margin: 1rem;
+  margin: 1rem 0 3rem 0;
   border: 1px solid var(--ola-red-color);
   border-radius: 40px;
 }
@@ -195,27 +205,15 @@ a {
   background: #f1e46b;
 }
 .footer-section {
-  width: 100%;
   background: var(--ola-red-color);
 }
-.footer-top {
-  display: flex;
-}
-.footer-middle {
-  display: flex;
-  justify-content: center;
-  margin: 2rem;
-}
-.footer-bottom {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
+
 .footer-link-bar {
   display: flex;
-  width: 100vw;
   justify-content: center;
   padding: 3rem 0 3rem 0;
+  margin-top: 0;
+  list-style: none;
 }
 .footer-link-bar a {
   color: var(--ola-white-color);
@@ -225,15 +223,25 @@ a {
 .footer-link-bar a:hover {
   text-decoration-line: underline;
 }
+.footer-middle {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
 .footer-social-bar a {
   color: var(--ola-white-color);
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .footer-logo {
   flex: 0 1 0;
   width: 2rem;
 }
 
-p {
+.footer-bottom p {
   text-align: center;
   font-family: "Roboto", sans-serif;
   color: var(--ola-white-color);
