@@ -82,6 +82,9 @@ body {
   text-decoration: none;
   padding: 2rem 2rem;
 }
+.navigation-item-bar a .fa-angle-down {
+  padding: 0 0.3rem;
+}
 
 .navigation-item-bar li {
   list-style: none;
