@@ -1,8 +1,16 @@
 /* font-family: 'Luckiest Guy', cursive; */
 /* font-family: 'Roboto', sans-serif; */
 
-* {
+/* basic styling */
+
+html {
   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 :root {
@@ -17,15 +25,13 @@ body {
   padding: 0px;
 }
 
-a {
-  text-decoration: none;
-}
-
+/* navigation section */
 .navbar {
   position: sticky;
   top: 0;
   width: 100%;
   background-color: var(--ola-white-color);
+  z-index: 2;
 }
 
 .navigation-wrap {
@@ -48,8 +54,8 @@ a {
 
 .navigation-item-search a {
   text-decoration: none;
-  /* padding: 1.6rem; */
-  margin: 1.6rem 0 1.6rem 0;
+  padding: 1.5rem;
+  /* margin: 1.6rem 0 1.6rem 0; */
   color: var(--ola-red-color);
 }
 
@@ -57,9 +63,11 @@ a {
   color: var(--ola-white-color);
   background: var(--ola-red-color);
 }
+
 .navigation-item-mobile-menu a {
   color: var(--ola-red-color);
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  text-decoration: none;
 }
 
 .navigation-item-bar {
@@ -90,17 +98,20 @@ a {
   background: var(--ola-red-color);
 }
 
+/* showcase section */
+
 .showcase h1 {
   margin: 0rem;
   padding: 3rem 0 0 3rem;
   font-size: 4rem;
   color: var(--ola-white-color);
-  width: 100vw;
+  width: 100%;
   height: 35vh;
   font-family: "Luckiest Guy", cursive;
   background: url("//asset-eu.unileversolutions.com/content/dam/unilever/heart/netherlands/general_image/walls_nl_header-1382974-jpg.jpg.ulenscale.1440x360.jpg")
     no-repeat center center/cover;
 }
+/* product section */
 
 .product-wrap {
   display: flex;
@@ -115,6 +126,8 @@ a {
   width: 100%;
   display: block;
 }
+
+/* history section */
 
 .history-section {
   background: var(--ola-green-color);
@@ -141,12 +154,16 @@ a {
   text-decoration: none;
   margin-right: 3rem;
 }
+
 .history-link-btn {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   color: var(--ola-white-color);
   text-decoration: none;
 }
+
+/* discover section */
+
 .discover-section {
   background: var(--ola-yellow-color);
   display: flex;
@@ -159,9 +176,11 @@ a {
   font-family: "Luckiest Guy", cursive;
   margin: 2rem 0;
 }
+
 .discover-stories {
   display: flex;
   justify-content: center;
+  flex-flow: row nowrap;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -193,6 +212,7 @@ a {
   display: block;
   flex: 0 1 auto;
 }
+
 .discover-story-btn {
   color: var(--ola-red-color);
   text-decoration: none;
@@ -206,6 +226,9 @@ a {
 .discover-story-btn:hover {
   background: #f1e46b;
 }
+
+/* footer section */
+
 .footer-section {
   background: var(--ola-red-color);
 }
@@ -221,6 +244,7 @@ a {
   color: var(--ola-white-color);
   font-family: "Roboto", sans-serif;
   padding: 0 1rem;
+  text-decoration: none;
 }
 .footer-link-bar a:hover {
   text-decoration-line: underline;
@@ -258,7 +282,11 @@ a {
 }
 .footer-country a {
   color: var(--ola-white-color);
+  text-decoration: none;
 }
+
+/* media queries */
+
 @media (min-width: 769px) {
   .navigation-item-mobile-menu {
     display: none;
@@ -292,11 +320,28 @@ a {
   .history-link {
     margin-bottom: 4rem;
   }
-  /* .discover-stories {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    position: relative;
-    margin-bottom: 2rem;
-  } */
+  .discover-stories {
+    flex-flow: column wrap;
+  }
+  .discover-story-left h2 {
+    bottom: 13rem;
+  }
+  .footer-link-bar {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .footer-link-bar li {
+    color: var(--ola-white-color);
+    font-family: "Roboto", sans-serif;
+    margin: 0.5rem;
+    text-decoration: none;
+  }
+  .footer-bottom {
+    flex-flow: column;
+  }
+  .footer-logo {
+    flex: 0 1 0;
+    width: 2rem;
+    margin-top: 1.5rem;
+  }
 }
